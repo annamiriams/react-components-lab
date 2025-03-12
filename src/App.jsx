@@ -1,7 +1,7 @@
 // src/App.jsx
 
 import './App.css';
-import weatherForecast from 'src/components/WeatherForecast/WeatherForecast.jsx';
+import WeatherForecast from './components/WeatherForecast/WeatherForecast.jsx';
 
 const weatherForecasts = [
     {
@@ -46,21 +46,10 @@ const App = () => {
     return (
         <>
             <h1>Local Weather</h1>
-
-            <section>
-                {/* weather data here */}
-                {/* Each instance of the WeatherForecast component should have the JSX equivalent of the following HTML structure: */}
-                <div className="weather">
-                    <h2>Day of the Week</h2>
-                    <img src="" alt="" />
-                    <p><span>conditions: </span>current weather conditions</p>
-                    <p><span>time: </span>time of day</p>
-                </div>
-
-            </section>
+            <WeatherForecast/>
         </>
 
     );
 }
 
-export default App
+export default App;

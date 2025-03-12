@@ -1,2 +1,0 @@
-import './WeatherForecasts.css';
-
