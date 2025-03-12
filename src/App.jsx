@@ -46,15 +46,15 @@ const App = () => {
     return (
         <>
             <h1>Local Weather</h1>
-
+        <section>
             {weatherForecasts.map((forecast, index) => (
                 <WeatherForecast
                     key={forecast.index}
                     {...forecast}
                 />
             ))}
+        </section >
         </>
-
     );
 }
 
